@@ -88,6 +88,8 @@ snap
 snapd
 typora
 lazygit
+curl
+wget
 )
 
 for name in "${list[@]}" ; do

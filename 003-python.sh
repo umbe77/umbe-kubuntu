@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Installing qtile xcffib"
+sudo pip3 install xcffib
+echo "Installing qtile cairocffi"
+sudo pip3 install --no-cache-dir cairocffi
 echo "Installing qtile WM"
 sudo pip3 install qtile
 echo "Installing ranger file manager"
