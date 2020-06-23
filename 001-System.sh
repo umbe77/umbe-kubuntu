@@ -55,6 +55,7 @@ volumeicon-alsa
 python3-pip
 qutebrowser
 zenity
+vim
 neovim
 sshfs
 fonts-firacode
