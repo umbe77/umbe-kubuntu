@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "manual install of ripgrep for bug in apt package"
+apt-get download ripgrep
+sudo dpkg --force-overwrite -i ripgrep*.deb
+
 echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install

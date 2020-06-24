@@ -64,7 +64,6 @@ w3m
 materia-gtk-theme
 neofetch
 papirus-icon-theme
-ripgrep
 docker
 docker-compose
 bat
