@@ -11,12 +11,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo "Installing starship prompt"
 curl -fsSL https://starship.rs/install.sh | bash
 
-echo "Installing zsh autosuggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions $XDG_CONFIG_HOME/zsh/plugins/zsh-autosuggestions
-
-echo "Installing zsh highlight"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $XDG_CONFIG_HOME/zsh/plugins/zsh-syntax-highlighting
-
 echo "Installing LazyDocker"
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 

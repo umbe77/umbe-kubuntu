@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-u_install() {
-    sudo apt install -y $1
-}
-
 echo "Add Rpositories"
 echo "========================="
 echo "Add alacritty repo"
@@ -19,81 +15,75 @@ yes | sudo add-apt-repository ppa:lazygit-team/release
 
 sudo apt update -y
 
-list=(
-build-essential
-software-properties-common
-dirmngr
-apt-transport-https
-lsb-release
-ca-certificates
-sxhkd
-nitrogen
-zsh
-nemo
-nemo-fileroller
-dunst
-unclutter
-xautolock
-compton
-udisks2
-udiskie
-blueman-applet
-network-manager
-network-manager-gnome 
-alacritty
-chromium
-arandr
-imagemagick
-lxappearance
-lxrandr
-playerctl
-pulseaudio
-pavucontrol
-alsa-tools
-alsa-utils
-volumeicon-alsa
-python3-pip
-qutebrowser
-zenity
-vim
-neovim
-sshfs
-fonts-firacode
-breeze
-w3m
-materia-gtk-theme
-neofetch
-papirus-icon-theme
-docker
-docker-compose
-bat
-jq
-ssh-askpass
-ssh-askpass-gnome
-ssh-askpass-fullscreen
-rofi
-tmux
-unace
-unrar
-zip
-unzip
-sharutils
-uudeview
-arj
-cabextract
-file-roller
-htop
-snap
-snapd
-typora
-lazygit
-curl
-wget
-)
-
-for name in "${list[@]}" ; do
-    u_install $name
-done
+sudo apt install -y build-essential \
+    software-properties-common \
+    dirmngr \
+    apt-transport-https \
+    lsb-release \
+    ca-certificates \
+    sxhkd \
+    nitrogen \
+    zsh \
+    nemo \
+    nemo-fileroller \
+    dunst \
+    unclutter \
+    xautolock \
+    compton \
+    udisks2 \
+    udiskie \
+    blueman-applet \
+    network-manager \
+    network-manager-gnome  \
+    alacritty \
+    chromium \
+    arandr \
+    imagemagick \
+    lxappearance \
+    lxrandr \
+    playerctl \
+    pulseaudio \
+    pavucontrol \
+    alsa-tools \
+    alsa-utils \
+    volumeicon-alsa \
+    python3-pip \
+    qutebrowser \
+    zenity \
+    vim \
+    neovim \
+    sshfs \
+    fonts-firacode \
+    breeze \
+    w3m \
+    materia-gtk-theme \
+    neofetch \
+    papirus-icon-theme \
+    docker \
+    docker-compose \
+    bat \
+    jq \
+    ssh-askpass \
+    ssh-askpass-gnome \
+    ssh-askpass-fullscreen \
+    rofi \
+    tmux \
+    unace \
+    unrar \
+    zip \
+    unzip \
+    sharutils \
+    uudeview \
+    arj \
+    cabextract \
+    file-roller \
+    htop \
+    snap \
+    snapd \
+    typora \
+    lazygit \
+    curl \
+    wget 
 
 echo "set docker permissions"
 sudo groupadd docker
