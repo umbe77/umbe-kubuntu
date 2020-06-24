@@ -4,4 +4,3 @@
 ./001-System.sh
 ./002-maunal.sh
 ./003-python.sh
-./004-postinstall.sh
