@@ -32,11 +32,9 @@ sudo apt install -y build-essential \
     compton \
     udisks2 \
     udiskie \
-    blueman-applet \
     network-manager \
     network-manager-gnome  \
     alacritty \
-    chromium \
     arandr \
     imagemagick \
     lxappearance \

@@ -9,7 +9,7 @@
   - install all nedded packages for build dmenu and st
 
     - ```bash
-      sudo apt install -y build-essential libx11-dev libxinerama-dev libxft-dev libharfbuzz-dev
+      sudo apt install -y git build-essential libx11-dev libxinerama-dev libxft-dev libharfbuzz-dev
       ```
 
   - Get My dmenu patch from https://github.com/umbe77/dmenu and install it with sudo make clean install
